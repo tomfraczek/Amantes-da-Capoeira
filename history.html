@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Capoeira</title>
+
+    <!-- JQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/main.css">
+
+    <script>
+    $(document).ready(function () {
+    $('a[href^="#"]').on('click', function (e) {
+        e.preventDefault();
+
+        var target = this.hash;
+        var $target = $(target);
+
+        $('html, body').stop().animate({
+            'scrollTop': $target.offset().top
+        }, 900, 'swing', function () {
+            window.location.hash = target;
+        });
+    });
+});
+    </script>
+
+  </head>
+  <body>
+
+    <nav>
+      <div class="nav-wrapper">
+        <div class="logo">
+          <img src="img/logo.png">
+        </div>
+        <div class="main-menu">
+          <ul class="main-menu-list">
+            <li><a href="index.html">home</a></li>
+            <li><a href="capoeira.html">capoeira</a></li>
+            <li><a class="current" href="history.html">history</a></li>
+            <li><a href="instrument.html">music</a></li>
+            <li><a href="more.html">more</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section>
+
+      <div class="main-picture history-pic-one">
+          <h1 class="h1-header history-header">Capoeira was born in Brazil of African parents</h1>
+          <button class="slide-btn3" type="button">+read about</button>
+      </div>
+    </div>
+
+      <div class="wrapper">
+        <div class="history-half-one half">
+          <h1>mestre bimba </h1>
+          <h1>criador da regional</h1>
+          <button class="btn-sml" type="button">+read about</button>
+        </div>
+
+        <div class="history-half-two half">
+          <h1>mestre pastinha</h1>
+          <h1>master of capoeira angola</h1>
+          <button class="btn-sml" type="button">+read about</button>
+        </div>
+
+        <div class="history-quarter-one quarter">
+          <h1><a href="batucada.html">zumbi</a></h1>
+        </div>
+
+        <div class="history-quarter-two quarter">
+          <h1><a href="puxada.html">besouro de manganga</a></h1>
+        </div>
+
+        <div class="history-quarter-three quarter">
+          <h1><a href="quilombos.html">quilombo(s)</a></h1>
+        </div>
+
+        <div class="history-quarter-four quarter">
+          <h1><a href="candomble.html">candomble</a></h1>
+        </div>
+      </div>
+    </section>
+
+
+
+
+  <footer>
+  <div class="holder">
+    <div class="one-forth">
+      <div class="logo fot">
+        <img src="https://zapodaj.net/images/d483b6d45624c.png">
+        <h3>Instrutor Lagarto</h3>
+      </div>
+    </div>
+    <div class="one-forth">
+      <ul>
+        <li><h3>Capoeira:</h3></li>
+        <li>Angola</li>
+        <li>Regional</li>
+        <li>Benguela</li>
+        <li>Contemporanea</li>
+      </ul>
+    </div>
+    <div class="one-forth">
+      <ul>
+        <li><h3>Academy:</h3></li>
+        <li>Gym Hall</li>
+        <li>Fitness Gym</li>
+        <li>Swimming pool</li>
+        <li>Bar</li>
+      </ul>
+    </div>
+    <div class="one-forth">
+      <ul>
+        <li><h3>Fundation:</h3></li>
+        <li>Our Mission</li>
+        <li>How Do We Work</li>
+        <li>How To Find Us</li>
+        <li>Support Us</li>
+      </ul>
+    </div>
+  </div><div class="rights">
+    <li><a href="#">Privacy</a></li>
+    <li><a href="#">Terms &amp;	Conditions</a></li>
+    <li><a href="#">Cookie Policy</a></li>
+    <li><a href="#">Web Site Map</a></li>
+  </div>
+
+    <div class="copy">
+      <p>&copy; 2017 Copyright Instrutor Lagarto</p>
+    </div>
+  </footer>
+
+
+  </body>
+</html>

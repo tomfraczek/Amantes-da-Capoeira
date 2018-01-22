@@ -1,0 +1,532 @@
+//reset
+*{
+  margin:  0;
+  padding: 0;
+}
+
+body{
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+$logogreen: #0E2B26;
+$standardshadow: 1px 1px 5px #000;
+@mixin transition($duration) {
+    -webkit-transition: $duration;
+    -moz-transition: $duration;
+    -ms-transition: $duration;
+    -o-transition: $duration;
+    transition: $duration;
+  }
+
+//end of reset
+
+.nav-wrapper{
+  position: absolute;
+  width: 100%;
+  height: 5em;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+  overflow: hidden;
+
+  .logo{
+    float: left;
+  }
+
+  .logo img{
+    height: 6em
+  }
+
+  .main-menu{
+    ul{
+      line-height: 5em;
+      margin: 0;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    li{
+      list-style: none;
+    }
+
+    .current{
+      border-bottom: 2px solid orange;
+    }
+
+    a{
+      padding: 1.8em 2em;
+      text-transform: uppercase;
+      font-weight: bold;
+      color: #fff;
+      -webkit-transition: 0.2s; /* For Safari 3.1 to 6.0 */
+      transition: 0.2s;
+    }
+
+    a:hover{
+      text-decoration: none;
+      border-bottom: 2px solid orange;
+    }
+  }
+}
+
+#myCarousel{
+  max-height: 630px;
+  overflow: hidden;
+}
+
+  .item img {
+    width: 100%;
+    height: auto;
+  }
+
+  .music{
+    text-align: center;
+    box-sizing: border-box;
+    background: $logogreen;
+    padding: 0 30px;
+    border-radius: 50px;
+  }
+
+  .second-slide {
+    width: 70%;
+    height: 80%;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    }
+
+
+
+  .carousel-caption{
+    height: 80%;
+    text-transform: uppercase;
+  }
+
+    .h1-header{
+      letter-spacing: 40px;
+      font-size: 90px;
+      font-weight: 800;
+      text-shadow: 1px 1px 5px #000;
+    }
+
+    .h1-header2{
+      font-size: 80px;
+      line-height: 120px;
+      font-weight: 800;
+    }
+
+  .slide-btn,
+  .slide-btn2{
+    margin-top: 60px;
+    background: none;
+    color: #fff;
+    padding: 30px 50px;
+    border: 3px solid #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 5px;
+    -webkit-transition: 0.4s; /* For Safari 3.1 to 6.0 */
+    transition: 0.4s;
+    border-radius: 3px;
+    text-shadow: $standardshadow;
+  }
+
+  .slide-btn2{
+    float: right;
+  }
+  .slide-btn:hover,
+  .btn-sml:hover,
+  .slide-btn2:hover,
+  .slide-btn3:hover{
+    background: #fff;
+    color: $logogreen;
+    border: 3px solid #fff;
+    text-shadow: none;
+  }
+
+  .love{
+    float: left;
+  }
+
+  .capoeira{
+    position: relative;
+    right: -300px;
+  }
+
+  .half{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-size: cover;
+    background-position: 50% 50%;
+
+    h1{
+      text-align: center;
+      font-size: 45px;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: #fff;
+      text-shadow: 1px 1px 5px #000;
+      margin: 0;
+    }
+  }
+
+.wrapper{
+  margin-top: .3em;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: .3em;
+  grid-auto-rows: 300px;
+  margin-bottom: .3em;
+}
+
+
+.half-one{
+  background-image: url(../img/bimba.jpg);
+  grid-column: 1/3;
+}
+
+.half-two{
+  background-image: url(../img/compasso.jpeg);
+  grid-column: 3/6;
+}
+
+  .btn-sml{
+    text-transform: uppercase;
+    background: transparent;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 5px;
+    border: 3px solid #fff;
+    border-radius: 3px;
+    padding: 15px;
+    text-shadow: $standardshadow;
+    @include transition(.2s);
+  }
+
+
+.quarter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-size: cover;
+  background-position: 50% 50%;
+
+  h1{
+      text-align: center;
+      font-size: 30px;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: #fff;
+      text-shadow: 1px 1px 5px #000;
+      margin: 0;
+
+      a{
+        color: #fff;
+
+      }
+  }
+}
+
+.quarter-one{
+  background-image: url(../img/batucada.jpg);
+}
+
+.quarter-two{
+  background-image: url(../img/puxada.jpg);
+}
+
+.quarter-three{
+  background-image: url(../img/maculele2.jpg);
+}
+
+.quarter-four{
+  background-image: url(../img/samba-roda.jpg);
+}
+
+.holder{
+  background-color: black;
+  width: 100%;
+  height: 200px;
+}
+
+.one-forth{
+  float: left;
+  width: 25%;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.fot{
+  padding-top: 15px;
+}
+
+.one-forth ul{
+  list-style-type: none;
+}
+
+.one-forth li{
+  color: Dimgray
+}
+
+.one-forth h3{
+  color: white;
+}
+.rights{
+  text-align: center;
+  width: 100%;
+  background-color: black;
+  padding-bottom: 25px;
+}
+.rights li{
+  list-style-type: none;
+  display: inline;
+  font-size: 14px;
+  margin: 0 25px 0 25px;
+}
+
+.copy{
+  text-align: center;
+  width: 100%;
+  background-color: black;
+  border-top: 1px solid gray;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.go-top {
+	position: fixed;
+	bottom: 2em;
+	right: 2em;
+	text-decoration: none;
+	color: #fff;
+	background-color: rgba(0, 0, 0, 0.3);
+	font-size: 12px;
+	padding: 1em;
+	display: none;
+  border: 1px solid #fff;
+}
+
+.go-top:hover {
+	background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  text-decoration: none;
+  border: 1px solid #fff;
+}
+
+.main-picture{
+  width: 100%;
+  height: 500px;
+}
+
+.space{
+  margin-top: 50px;
+}
+
+.main-pic-list{
+  width: fit-content;
+  position: relative;
+  top: 50%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border: 4px solid #fff;
+  border-radius: 3px;
+  list-style: none;
+
+  li{
+    padding: 20px 0;
+
+    a{
+      color: #fff;
+      font-size: 30px;
+      text-transform: capitalize;
+      padding: 25px;
+      background: none;
+      -webkit-transition: .2s;
+      -moz-transition: .2s;
+      -o-transition: .2s;
+      transition: all ease .2s;
+
+      &:hover{
+        background: #fff;
+        color: $logogreen;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+/*============================================================
+capoeira.html*/
+
+.capoeira-content{
+}
+
+.capoeira-pic-one{
+  background-image: url(../img/capoeira_dc_by_conejoblanco-d33jiyc.jpg);
+  background-size: cover;
+}
+
+.content-wrapper{
+  background: #fff;
+  width: 95%;
+  background: #fff;;
+  margin: 10px  auto;
+  padding: 1em;
+}
+
+.content-sm{
+
+}
+
+.content-sm:nth-child(even){
+
+}
+
+#capoeira{
+
+}
+
+#angola{
+
+}
+
+#regional{
+
+}
+
+#contemporanea{
+
+}
+
+#carioca{
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*=========================================================
+history*/
+
+
+.history-pic-one{
+  background-image: url(../img/history.jpg);
+  background-size: cover;
+  background-position: 50% 20%;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.slide-btn3{
+  margin: 0;
+  background: none;
+  color: #fff;
+  padding: 30px 50px;
+  border: 3px solid #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 5px;
+  -webkit-transition: 0.4s; /* For Safari 3.1 to 6.0 */
+  transition: 0.4s;
+  border-radius: 3px;
+  text-shadow: $standardshadow;
+  align-self: flex-end;
+  bottom: 25px;
+  position: relative;
+  bottom: 40px;
+}
+
+.history-header{
+  width: 70%;
+  letter-spacing: 20px;
+  font-size: 80px;
+  color: #fff;
+  text-shadow: $standardshadow;
+  margin-top: 70px;
+}
+
+.history-half-one{
+  background-image: url(../img/bimba.jpg);
+  grid-column: 1/3;
+}
+
+.history-half-two{
+  background-image: url(../img/pastinha.jpg);
+  grid-column: 3/6;
+}
+
+.history-quarter-one{
+  background-image: url(../img/zumbi.jpg);
+  background-position: top;
+}
+
+.history-quarter-two{
+  background-image: url(../img/besouro.jpg);
+}
+
+.history-quarter-three{
+  background-image: url(../img/quilombo.jpg);
+}
+
+.history-quarter-four{
+  background-image: url(../img/candomble.jpg);
+}
+
+
+
+
+
+
+
+
+/*=========================================================
+music*/
+
+.four-col{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+
+.music-col img{
+  width: 10%;
+}
+
+.instruments-pic-one{
+  background-image: url(../img/music/bateria.jpg);
+  background-size: cover;
+}

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Capoeira</title>
+
+    <!-- JQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/main.css">
+
+    <script>
+
+
+    $(document).ready(function () {
+        $('a[href^="#"]').on('click', function (e) {
+            e.preventDefault();
+
+            var target = this.hash;
+            var $target = $(target);
+
+            $('html, body').stop().animate({
+                'scrollTop': $target.offset().top
+            }, 900, 'swing', function () {
+                window.location.hash = target;
+            });
+        });
+
+        $(window).scroll(function() {
+          if ($(this).scrollTop() > 200) {
+            $('.go-top').fadeIn(200);
+          } else {
+            $('.go-top').fadeOut(200);
+          }
+        });
+
+        // Animate the scroll to top
+        $('.go-top').click(function(event) {
+          event.preventDefault();
+
+          $('html, body').animate({scrollTop: 0}, 900);
+        });
+
+        document.getElementsByClassName('angola').addEventListener("click", angola);
+
+        function angola(){
+
+          document.getElementById("space").innerHTML = "New text!";
+        }
+
+    });
+
+    </script>
+
+  </head>
+  <body>
+
+    <nav>
+      <div class="nav-wrapper">
+        <div class="logo">
+          <img src="img/logo.png">
+        </div>
+        <div class="main-menu">
+          <ul class="main-menu-list">
+            <li><a href="index.html">home</a></li>
+            <li><a class="current" href="capoeira.html">capoeira</a></li>
+            <li><a href="history.html">history</a></li>
+            <li><a href="instrument.html">music</a></li>
+            <li><a href="more.html">more</a></li>
+            <li  class="contact"><a href="contact.html">contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section>
+
+      <div class="main-picture capoeira-pic-one">
+        <ul class="main-pic-list">
+          <li><a class="angola" href="#angola">angola</a></li>
+          <li><a class="regional" href="#regional">regional</a></li>
+          <li><a class="contemp" href="#contemporanea">contemporanea</a></li>
+          <li><a class="carioca" href="#carioca">carioca</a></li>
+        </ul>
+      </div>
+
+    </section>
+
+    <section class="capoeira-content">
+      <div class="content-wrapper">
+
+
+        <div class="content-sm" id="capoeira">
+          <h1>Capoeira</h1>
+          <p>An Afro-Brazilian martial art that combines elements of dance, acrobatics and music. It was developed in Brazil mainly by Angolans, at the beginning of the 16th century. It is known for its quick and complex maneuvers, predominantly using power, speed, and leverage across a wide variety of kicks, spins and other techniques.</p>
+          <p>The most widely accepted origin of the word capoeira comes from the Tupi words ka'a ("jungle") e pûer ("it was"), referring to the areas of low vegetation in the Brazilian interior where fugitive slaves would hide. A practitioner of the art is called a capoeirista.</p>
+          <p>On 26 November 2014 capoeira was granted a special protected status as "intangible cultural heritage" by UNESCO.</p>
+        </div>
+
+        <div class="content-sm" id="angola">
+          <h1>Capoeira Angola</h1>
+          <p>Capoeira de Angola refers to every capoeira that keeps the traditions held before the creation of the Regional style.</p>
+          <p>Existing in many parts of Brazil since colonial times, most notably in the cities of Rio de Janeiro, Salvador and Recife, it's impossible to tell where and when Capoeira Angola began taking its present form. The name Angola starts as early as the beginning of slavery in Brazil, when Africans, taken to Luanda to be shipped to the Americas, were called in Brazil "black people from Angola", regardless of their nationality. In some places of Brazil people would refer to capoeira as "playing Angola" and, according to Mestre Noronha, the capoeira school Centro de Capoeira Angola Conceição da Praia, created in Bahia, already used the name Capoeira Angola illegally in the beginning of the 1920 decade.</p>
+          <p>The name Angola was finally immortalized by Mestre Pastinha at February 23, 1941, when he opened the Centro Esportivo de capoeira Angola (CECA). Pastinha preferred the ludic aspects of the game rather than the martial side, and was much respected by recognized capoeira masters. Soon many other masters would adopt the name Angola, even those who would not follow Pastinha's style.</p>
+          <p>The ideal of Capoeira Angola is to maintain capoeira as close to its roots as possible. Characterized by being strategic, with sneaking movements executed standing or near the floor depending on the situation to face, it values the traditions of malícia, malandragem and unpredictability of the original capoeira.</p>
+          <p>Typical music bateria formation in a roda of Capoeira Angola is three berimbaus, two pandeiros, one atabaque, one agogô and one ganzuá.</p>
+        </div>
+
+        <div class="content-sm" id="regional">
+          <h1>Capoeira Regional</h1>
+          <p>Capoeira Regional began to take form in the 1920 decade, when Mestre Bimba met his future student, José Cisnando Lima. Both believed that capoeira was losing its martial side and concluded there was a need to restructure it. Bimba created his sequências de ensino (teaching combinations) and created capoeira's first teaching method. Advised by Cisnando, Bimba decided to call his style Luta Regional Baiana, as capoeira was still illegal at that time.</p>
+          <p>The base of Capoeira Regional is the original capoeira without many of the aspects that were impractical in a real fight, with less subterfuge and more objectivity. Training was mainly focused on attack, dodging and counter-attack, giving high importance to precision and discipline. Bimba also added a few moves from other arts, notably the batuque, an old street fight game practiced by his father. Use of jumps or aerial acrobacies was kept to a minimum, since one of its foundations was always keeping at least one hand or foot firmly attached to the ground. Mestre Bimba often said, "o chão é amigo do capoeirista" (the floor is a friend to the capoeirista).</p>
+          <p>Capoeira Regional also introduced the first ranking method in capoeira. Regional had three levels: calouro (freshman), formado (graduated) and formado especializado (specialist). When a student completed a course, a special celebration ceremony was had resulting with a silk scarf being tied around the capoeirista's neck.</p>
+          <p>The traditions of roda and capoeira game were kept, being used to put into use what was learned during training. The disposition of musical instruments, however, was changed, being made by a single berimbau and two pandeiros.</p>
+          <p>The Luta Regional Baiana soon became popular, finally changing capoeira's bad image. Mestre Bimba made many presentations of his new style, but the best known was the one made at 1953 to Brazilian president Getúlio Vargas, where the president would say: "A Capoeira é o único esporte verdadeiramente nacional" (Capoeira is the only truly national sport).</p>
+        </div>
+
+        <div class="content-sm" id="contemporanea">
+          <h1>Capoeira Contempor&#226;nea/Moderna</h1>
+          <p>In the 1970s a mixed style began to take form, with practitioners taking the aspects they considered more important from both Regional and Angola. Notably more acrobatic, this sub-style is seen by some as the natural evolution of capoeira, by others as adulteration or even misinterpretation of capoeira.</p>
+          <p>Nowadays the label Contemporânea applies to any capoeira group who don't follow Regional or Angola styles, even the ones who mix capoeira with other martial arts. Some notable groups whose style cannot be described as either Angola or Regional but rather "a style of their own", include Senzala de Santos, Cordao de Ouro and Abada. In the case of Cordao de Ouro, the style may be described as "Miudinho", a low and fast-paced game, while in Senzala de Santos the style may described simply as "Senzala de Santos", an elegant, playful combination of Angola and Regional. Capoeira Abada may be described as a more aggressive, less "dance" influenced style of Capoeira.</p>
+        </div>
+
+        <div class="content-sm" id="carioca">
+          <h1>Capoeira Carioca</h1>
+          <p>Many schools in Brazil do not claim affiliation with either lineage, but trace their descent to Capoeira Carioca, a style dating back to the early 1900s. In its original form Capoeira Carioca is said to have been much more violent and much less deceptive than Capoeira Angola or Capoeira Regional. Striking targets included the neck, eyes, joints, crotch, and vital points in order to incapacitate the opponent as quickly as possible. Music was not part of the art.</p>
+        </div>
+    </section>
+
+
+
+
+
+<a href="" class="go-top">Go Top</a>
+  <footer class="space">
+  <div class="holder">
+    <div class="one-forth">
+      <div class="logo fot">
+        <img src="https://zapodaj.net/images/d483b6d45624c.png">
+        <h3>Instrutor Lagarto</h3>
+      </div>
+    </div>
+    <div class="one-forth">
+      <ul>
+        <li><h3>Capoeira:</h3></li>
+        <li>Angola</li>
+        <li>Regional</li>
+        <li>Benguela</li>
+        <li>Contemporanea</li>
+      </ul>
+    </div>
+    <div class="one-forth">
+      <ul>
+        <li><h3>Academy:</h3></li>
+        <li>Gym Hall</li>
+        <li>Fitness Gym</li>
+        <li>Swimming pool</li>
+        <li>Bar</li>
+      </ul>
+    </div>
+    <div class="one-forth">
+      <ul>
+        <li><h3>Fundation:</h3></li>
+        <li>Our Mission</li>
+        <li>How Do We Work</li>
+        <li>How To Find Us</li>
+        <li>Support Us</li>
+      </ul>
+    </div>
+  </div><div class="rights">
+    <li><a href="#">Privacy</a></li>
+    <li><a href="#">Terms &amp;	Conditions</a></li>
+    <li><a href="#">Cookie Policy</a></li>
+    <li><a href="#">Web Site Map</a></li>
+  </div>
+
+    <div class="copy">
+      <p>&copy; 2017 Copyright Instrutor Lagarto</p>
+    </div>
+  </footer>
+
+  </body>
+</html>
